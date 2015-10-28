@@ -50,7 +50,10 @@ print(acc)
 # print("--------------")
 
 # x = list(0)
-# type(x) 
+# type(x)
 # >> will return 'list'
 
 print("--------------")
+
+aa;ldkfjal;ksdjfa;lksdf = 1
+blahhhh = 2
