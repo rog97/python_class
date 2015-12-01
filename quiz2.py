@@ -50,3 +50,4 @@ class Cat(Animal):
 
 Whiskers = Cat()
 print(Whiskers.number_legs())
+print(range(10))
