@@ -28,7 +28,26 @@ round_uuid = funding_rounds_summary[len(funding_rounds_summary)-1].uuid
 latest_round = cb.funding_round(round_uuid)
 print(latest_round)
 
+an_investor = latest_round.investments[len(funding_rounds_summary)-1]  # a Investment
+print(str(an_investor))  # prints: Investment: [Organization: Name]
 
+def investment_round(company):
+    i = 1
+    for investment_round in funding_rounds_summary:
+        round_uuid = investment_round.uuid
+        this_round = cb.funding_round(round_uuid)
+        print("This is investment round "+str(i))
+        i += 1
+        print(this_round)
+        for present_round in this_round.investments:
+            print(present_round)
+
+def investors(company):
+    for latest_round in latest_round.investments:
+        print(latest_round)
+
+investment_round('betterment')
+#investors('betterment')
 
 def founders(company):
     people = list()
